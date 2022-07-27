@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+
+:root {
+    --main-bg-color: #2874f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(207, 202, 202);
+}
+
+header {
+    background-color: var(--main-bg-color);
+    font-family: 'Public Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 88px;
+    padding: 0 25px;
+}
+
+nav ul {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 30vw;
+    height: 27px;
+    border-radius: 5px;
+    margin-left: 56px;
+    margin-right: 2px;
+    padding: 0 12px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.slider img{
+    width: 90vw;
+    height: 50vh;
+    margin-top: 10px;
+}
+
+.cards{
+    display: flex;
+    overflow: scroll;
+}
+
+.card {
+    max-width: 95vw;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.card-item {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Public Sans', sans-serif;
+    margin: 10px 25px;
+}
+
+.card-item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card h2 {
+    padding-top: 15px;
+    padding-left: 20px;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.card2 {
+    max-width: 97vw;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.card2-item {
+    display: inline-flex;
+}
+
+.card2-item:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.container {
+    min-height: calc(100vh - 60px - 12vh);
+}
+
+footer {
+    height: 10vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Public Sans', sans-serif;
+}
